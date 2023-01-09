@@ -1,0 +1,7 @@
+Configuring data repository users
+Setting user.
+2023-01-09T00:35:18.799-0800 E QUERY    [thread1] Error: couldn't add user: not authorized on admin to execute command { createUser: "parasoft_embedded_repo", pwd: "xxx", roles: [ { role: "root", db: "admin" } ], digestPassword: false, writeConcern: { w: "majority", wtimeout: 600000.0 }, $db: "admin" } :
+_getErrorWithCode@src/mongo/shell/utils.js:25:13
+DB.prototype.createUser@src/mongo/shell/db.js:1437:15
+@C:\workspaces\SOAtest_CLI_Training\.metadata\EmbeddedDataRepository\logs\config.js:34:1
+failed to load: C:\workspaces\SOAtest_CLI_Training\.metadata\EmbeddedDataRepository\logs\config.js

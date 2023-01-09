@@ -1,0 +1,80 @@
+2023-01-09T00:35:17.773-0800 I CONTROL  [initandlisten] MongoDB starting : pid=22512 port=9100 dbpath=C:\workspaces\SOAtest_CLI_Training\.metadata\EmbeddedDataRepository\repositories 64-bit host=halimede
+2023-01-09T00:35:17.773-0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2023-01-09T00:35:17.773-0800 I CONTROL  [initandlisten] db version v3.6.8
+2023-01-09T00:35:17.773-0800 I CONTROL  [initandlisten] git version: 6bc9ed599c3fa164703346a22bad17e33fa913e4
+2023-01-09T00:35:17.774-0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2o-fips  27 Mar 2018
+2023-01-09T00:35:17.774-0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2023-01-09T00:35:17.774-0800 I CONTROL  [initandlisten] modules: none
+2023-01-09T00:35:17.775-0800 I CONTROL  [initandlisten] build environment:
+2023-01-09T00:35:17.775-0800 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2023-01-09T00:35:17.775-0800 I CONTROL  [initandlisten]     distarch: x86_64
+2023-01-09T00:35:17.775-0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2023-01-09T00:35:17.775-0800 I CONTROL  [initandlisten] options: { net: { bindIpAll: true, ipv6: true, port: 9100 }, security: { authorization: "enabled" }, storage: { dbPath: "C:\workspaces\SOAtest_CLI_Training\.metadata\EmbeddedDataRepository\repositories" }, systemLog: { destination: "file", path: "C:\workspaces\SOAtest_CLI_Training\.metadata\EmbeddedDataRepository\logs\repo.log" } }
+2023-01-09T00:35:17.778-0800 I -        [initandlisten] Detected data files in C:\workspaces\SOAtest_CLI_Training\.metadata\EmbeddedDataRepository\repositories created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2023-01-09T00:35:17.778-0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=15797M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2023-01-09T00:35:17.986-0800 I STORAGE  [initandlisten] WiredTiger message [1673253317:985970][22512:140717196335920], txn-recover: Main recovery loop: starting at 1/27520
+2023-01-09T00:35:18.164-0800 I STORAGE  [initandlisten] WiredTiger message [1673253318:164385][22512:140717196335920], txn-recover: Recovering log 1 through 2
+2023-01-09T00:35:18.242-0800 I STORAGE  [initandlisten] WiredTiger message [1673253318:242013][22512:140717196335920], txn-recover: Recovering log 2 through 2
+2023-01-09T00:35:18.302-0800 I STORAGE  [initandlisten] WiredTiger message [1673253318:301455][22512:140717196335920], txn-recover: Set global recovery timestamp: 0
+2023-01-09T00:35:18.712-0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/workspaces/SOAtest_CLI_Training/.metadata/EmbeddedDataRepository/repositories/diagnostic.data'
+2023-01-09T00:35:18.714-0800 I NETWORK  [initandlisten] waiting for connections on port 9100
+2023-01-09T00:35:18.783-0800 I NETWORK  [listener] connection accepted from 127.0.0.1:49306 #1 (1 connection now open)
+2023-01-09T00:35:18.794-0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:49306 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-01-09T00:35:18.798-0800 I ACCESS   [conn1] Unauthorized: not authorized on admin to execute command { createUser: "parasoft_embedded_repo", pwd: "xxx", roles: [ { role: "root", db: "admin" } ], digestPassword: false, writeConcern: { w: "majority", wtimeout: 600000.0 }, $db: "admin" }
+2023-01-09T00:35:18.804-0800 I NETWORK  [conn1] end connection 127.0.0.1:49306 (0 connections now open)
+2023-01-09T00:35:19.116-0800 I NETWORK  [listener] connection accepted from 127.0.0.1:49311 #2 (1 connection now open)
+2023-01-09T00:35:19.143-0800 I NETWORK  [conn2] received client metadata from 127.0.0.1:49311 conn2: { driver: { name: "mongo-java-driver|sync", version: "4.7.1" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Azul Systems, Inc./11.0.16.1+1-LTS" }
+2023-01-09T00:35:19.274-0800 I NETWORK  [listener] connection accepted from 127.0.0.1:49312 #3 (2 connections now open)
+2023-01-09T00:35:19.282-0800 I NETWORK  [conn3] received client metadata from 127.0.0.1:49312 conn3: { driver: { name: "mongo-java-driver|sync", version: "4.7.1" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Azul Systems, Inc./11.0.16.1+1-LTS" }
+2023-01-09T00:35:19.321-0800 I ACCESS   [conn3] Successfully authenticated as principal parasoft_embedded_repo on admin
+2023-01-09T00:35:19.372-0800 I NETWORK  [conn3] end connection 127.0.0.1:49312 (1 connection now open)
+2023-01-09T00:35:19.374-0800 I NETWORK  [conn2] end connection 127.0.0.1:49311 (0 connections now open)
+2023-01-09T00:35:19.384-0800 I NETWORK  [listener] connection accepted from 127.0.0.1:49313 #4 (1 connection now open)
+2023-01-09T00:35:19.386-0800 I NETWORK  [conn4] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 127.0.0.1:49313 (connection id: 4)
+2023-01-09T00:35:19.386-0800 I NETWORK  [conn4] end connection 127.0.0.1:49313 (0 connections now open)
+2023-01-09T00:35:19.395-0800 I NETWORK  [listener] connection accepted from 127.0.0.1:49314 #5 (1 connection now open)
+2023-01-09T00:35:19.397-0800 I NETWORK  [conn5] received client metadata from 127.0.0.1:49314 conn5: { driver: { name: "mongo-java-driver|sync", version: "4.7.1" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Azul Systems, Inc./11.0.16.1+1-LTS" }
+2023-01-09T00:35:19.399-0800 I NETWORK  [listener] connection accepted from 127.0.0.1:49315 #6 (2 connections now open)
+2023-01-09T00:35:19.400-0800 I NETWORK  [conn6] received client metadata from 127.0.0.1:49315 conn6: { driver: { name: "mongo-java-driver|sync", version: "4.7.1" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Azul Systems, Inc./11.0.16.1+1-LTS" }
+2023-01-09T00:35:19.415-0800 I NETWORK  [listener] connection accepted from 127.0.0.1:49316 #7 (3 connections now open)
+2023-01-09T00:35:19.416-0800 I NETWORK  [conn7] received client metadata from 127.0.0.1:49316 conn7: { driver: { name: "mongo-java-driver|sync", version: "4.7.1" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Azul Systems, Inc./11.0.16.1+1-LTS" }
+2023-01-09T00:35:19.450-0800 I ACCESS   [conn7] Successfully authenticated as principal parasoft_embedded_repo on admin
+2023-01-09T00:35:19.462-0800 I NETWORK  [conn7] end connection 127.0.0.1:49316 (2 connections now open)
+2023-01-09T00:35:19.463-0800 I NETWORK  [conn5] end connection 127.0.0.1:49314 (1 connection now open)
+2023-01-09T00:35:19.464-0800 I NETWORK  [conn6] end connection 127.0.0.1:49315 (0 connections now open)
+2023-01-09T00:35:22.022-0800 I NETWORK  [listener] connection accepted from 127.0.0.1:49318 #8 (1 connection now open)
+2023-01-09T00:35:22.023-0800 I NETWORK  [conn8] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 127.0.0.1:49318 (connection id: 8)
+2023-01-09T00:35:22.023-0800 I NETWORK  [conn8] end connection 127.0.0.1:49318 (0 connections now open)
+2023-01-09T00:35:22.028-0800 I NETWORK  [listener] connection accepted from 127.0.0.1:49319 #9 (1 connection now open)
+2023-01-09T00:35:22.029-0800 I NETWORK  [conn9] received client metadata from 127.0.0.1:49319 conn9: { driver: { name: "mongo-java-driver|sync", version: "4.7.1" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Azul Systems, Inc./11.0.16.1+1-LTS" }
+2023-01-09T00:35:22.030-0800 I NETWORK  [listener] connection accepted from 127.0.0.1:49320 #10 (2 connections now open)
+2023-01-09T00:35:22.032-0800 I NETWORK  [conn10] received client metadata from 127.0.0.1:49320 conn10: { driver: { name: "mongo-java-driver|sync", version: "4.7.1" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Azul Systems, Inc./11.0.16.1+1-LTS" }
+2023-01-09T00:35:22.035-0800 I NETWORK  [listener] connection accepted from 127.0.0.1:49321 #11 (3 connections now open)
+2023-01-09T00:35:22.036-0800 I NETWORK  [conn11] received client metadata from 127.0.0.1:49321 conn11: { driver: { name: "mongo-java-driver|sync", version: "4.7.1" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Azul Systems, Inc./11.0.16.1+1-LTS" }
+2023-01-09T00:35:22.064-0800 I ACCESS   [conn11] Successfully authenticated as principal parasoft_embedded_repo on admin
+2023-01-09T00:35:22.070-0800 I NETWORK  [conn11] end connection 127.0.0.1:49321 (2 connections now open)
+2023-01-09T00:35:22.071-0800 I NETWORK  [conn9] end connection 127.0.0.1:49319 (1 connection now open)
+2023-01-09T00:35:22.071-0800 I NETWORK  [conn10] end connection 127.0.0.1:49320 (0 connections now open)
+2023-01-09T00:35:42.634-0800 I NETWORK  [listener] connection accepted from 127.0.0.1:49323 #12 (1 connection now open)
+2023-01-09T00:35:42.635-0800 I NETWORK  [conn12] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 127.0.0.1:49323 (connection id: 12)
+2023-01-09T00:35:42.635-0800 I NETWORK  [conn12] end connection 127.0.0.1:49323 (0 connections now open)
+2023-01-09T00:35:42.642-0800 I NETWORK  [listener] connection accepted from 127.0.0.1:49324 #13 (1 connection now open)
+2023-01-09T00:35:42.643-0800 I NETWORK  [conn13] received client metadata from 127.0.0.1:49324 conn13: { driver: { name: "mongo-java-driver|sync", version: "4.7.1" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Azul Systems, Inc./11.0.16.1+1-LTS" }
+2023-01-09T00:35:42.644-0800 I NETWORK  [listener] connection accepted from 127.0.0.1:49325 #14 (2 connections now open)
+2023-01-09T00:35:42.645-0800 I NETWORK  [conn14] received client metadata from 127.0.0.1:49325 conn14: { driver: { name: "mongo-java-driver|sync", version: "4.7.1" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Azul Systems, Inc./11.0.16.1+1-LTS" }
+2023-01-09T00:35:42.652-0800 I NETWORK  [listener] connection accepted from 127.0.0.1:49326 #15 (3 connections now open)
+2023-01-09T00:35:42.654-0800 I NETWORK  [conn15] received client metadata from 127.0.0.1:49326 conn15: { driver: { name: "mongo-java-driver|sync", version: "4.7.1" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Azul Systems, Inc./11.0.16.1+1-LTS" }
+2023-01-09T00:35:42.680-0800 I ACCESS   [conn15] Successfully authenticated as principal parasoft_embedded_repo on admin
+2023-01-09T00:35:42.683-0800 I NETWORK  [conn15] end connection 127.0.0.1:49326 (2 connections now open)
+2023-01-09T00:35:42.684-0800 I NETWORK  [conn14] end connection 127.0.0.1:49325 (1 connection now open)
+2023-01-09T00:35:42.684-0800 I NETWORK  [conn13] end connection 127.0.0.1:49324 (0 connections now open)
+2023-01-09T00:38:08.660-0800 I NETWORK  [listener] connection accepted from 127.0.0.1:49360 #16 (1 connection now open)
+2023-01-09T00:38:08.661-0800 I NETWORK  [conn16] received client metadata from 127.0.0.1:49360 conn16: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 19045)" } }
+2023-01-09T00:38:08.682-0800 I ACCESS   [conn16] Successfully authenticated as principal parasoft_embedded_repo on admin
+2023-01-09T00:38:08.686-0800 I COMMAND  [conn16] terminating, shutdown command received
+2023-01-09T00:38:08.686-0800 I NETWORK  [conn16] shutdown: going to close listening sockets...
+2023-01-09T00:38:08.687-0800 I FTDC     [conn16] Shutting down full-time diagnostic data capture
+2023-01-09T00:38:08.690-0800 I STORAGE  [conn16] WiredTigerKVEngine shutting down
+2023-01-09T00:38:08.733-0800 I STORAGE  [conn16] shutdown: removing fs lock...
+2023-01-09T00:38:08.734-0800 I CONTROL  [conn16] now exiting
+2023-01-09T00:38:08.734-0800 I CONTROL  [conn16] shutting down with code:0
